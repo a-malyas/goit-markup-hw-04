@@ -119,14 +119,34 @@ body {
   margin-right: 50px;
 }
 
+.icon {
+ display: inline-block;
+ margin-right: 10px;
+ cursor: pointer;
+ fill: #757575;
+}
+
+.icon:hover{
+  fill: var(--accent-color);
+}
 
 /*============= HERO =============*/
 .hero{
-  background-color: var(--background-color);
-  height: 600px;
-  text-align: center;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/back_img.jpg);
+    text-align: center;
 }
-
+  
 .hero .container {
   height: 600px;
 }
