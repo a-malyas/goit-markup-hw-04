@@ -118,6 +118,17 @@ body {
 .header {
   border: 1px solid #ececec;
 }
+
+.icon {
+  margin-right: 10px;
+  cursor: pointer;
+  fill: #757575;
+}
+
+.icon:hover {
+  fill: var(--accent-color);
+}
+
 /*============= Filters =============*/
 .filters .container {
   padding-top: 94px;
@@ -200,12 +211,22 @@ body {
   background-color: var(--background-color);
 }
 
-.footer .container {
+.footer .container{
+  display: flex;
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer address {
+.footer address{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 70px;
+  min-width: 231px;
+} 
+
+.footer-address-list {
   margin-top: 20px;
 }
 
@@ -216,7 +237,7 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: var(--white-dark-theme);
+  color: var(--white-dark-theme); 
 }
 
 .address-place {
@@ -224,11 +245,11 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--white-dark-theme);
-}
+  color: var(--white-dark-theme); 
+ }
 
-.address-list:not(:last-child) {
-  margin-bottom: 9px;
+ .address-list:not(:last-child) {
+   margin-bottom: 9px;
 }
 
 .footer-address {
@@ -236,5 +257,43 @@ body {
   font-size: 14px;
   line-height: 1.174;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);*/
+}
+
+.footer-links {
+  width: 206px;
+}
+.footer-features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-dark-theme);
+  margin-bottom: 20px;  
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.social-list-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-dark-theme);
 }
