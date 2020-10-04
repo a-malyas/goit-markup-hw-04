@@ -118,13 +118,27 @@ body {
   margin-right: 50px;
 }
 
+.header-contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.mail {
+  margin-right: 30px;
+}
+
+.mail:hover,
+.phone:hover {
+  color: var(--accent-color);
+  
+}
 .icon {
  margin-right: 10px;
- cursor: pointer;
  fill: #757575;
 }
 
-.icon:hover{
+.mail:hover .icon,
+.phone:hover .icon {
   fill: var(--accent-color);
 }
 
@@ -370,12 +384,12 @@ body {
   fill: #afb1b8;
 }
 
-.clients-list-svg:hover {
-  fill: var(--accent-color);
-}
-
 .clients-list-link:hover {
   border-color: var(--accent-color);
+}
+
+.clients-list-link:hover .clients-list-svg {
+  fill: var(--accent-color);
 }
 
 /*============= Footer =============*/
@@ -447,7 +461,7 @@ body {
 }
 
 .footer .social-list-link {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer .social-list-link:hover {

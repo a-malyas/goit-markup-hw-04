@@ -115,17 +115,27 @@ body {
   margin-right: 50px;
 }
 
-.header {
-  border: 1px solid #ececec;
+.header-contacts-list {
+  display: flex;
+  align-items: center;
 }
 
+.mail {
+  margin-right: 30px;
+}
+
+.mail:hover,
+.phone:hover {
+  color: var(--accent-color);
+  
+}
 .icon {
-  margin-right: 10px;
-  cursor: pointer;
-  fill: #757575;
+ margin-right: 10px;
+ fill: #757575;
 }
 
-.icon:hover {
+.mail:hover .icon,
+.phone:hover .icon {
   fill: var(--accent-color);
 }
 
@@ -157,14 +167,14 @@ body {
   color: var(--title-color);
 }
 
-.filters-list-link:hover {
-  color: var(--white-dark-theme);
-}
-
 .filters-list:hover,
 .filters-list:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+
+.filters-list:hover .filters-list-link {
+  color: var(--white-dark-theme);
 }
 
 /*============= Projects =============*/
@@ -289,7 +299,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list-link:hover {
