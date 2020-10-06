@@ -118,6 +118,10 @@ body {
   margin-right: 50px;
 }
 
+.header {
+  border: 1px solid #ececec;
+}
+
 .header-contacts-list {
   display: flex;
   align-items: center;
